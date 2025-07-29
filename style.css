@@ -14,12 +14,15 @@
     /* primary */
     --purple-50: hsl(260, 100%, 95%);
     --purple-300: hsl(264, 82%, 80%);
+    --purple-400: hsl(264, 82%, 70%);
     --purple-500: hsl(263, 55%, 52%);
 
     /* neutral */
     --white: hsl(0, 0%, 100%);
+    --grey-50: hsl(300, 5%, 96%);
     --grey-100: hsl(214, 17%, 92%);
     --grey-200: hsl(0, 0%, 81%);
+    --grey-300: hsl(215, 10%, 67%);
     --grey-400: hsl(224, 10%, 45%);
     --grey-500: hsl(217, 19%, 35%);
     --dark-blue: hsl(219, 29%, 14%);
@@ -34,19 +37,144 @@
     --default-letter-spacing: 0px;
 
     /* spacing */
-
+    --spacing-750: 73px;
     --spacing-500: 40px;
+    --spacing-420: 35px;
     --spacing-400: 32px;
     --spacing-300: 24px;
+    --spacing-210: 17px;
     --spacing-200: 16px;
     --spacing-100: 8px;
     --spacing-50: 4px;
     
 }
 
+/* background colour */
+
+html, body {
+    background-color: var(--grey-50);
+}
+
 /* grid styles */
 
+.gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
 
+    margin: var(--spacing-750) var(--spacing-420);
+
+}
+
+.gridContainer {
+    width: 100%;
+    padding: var(--spacing-400);
+    border-radius: var(--spacing-100);
+    background-color: grey;
+
+    margin-bottom: var(--spacing-400);
+}
+
+/* author container */
+.authorContainer {
+    display: flex;
+}
+
+.authorImage {
+    border-radius: 50%;
+    width: 28px;
+    margin-right: var(--spacing-210);
+}
+
+.authorName {
+    font: var(--text-preset-2);
+}
+.authorVerified {
+    font: var(--text-preset-4);
+}
+
+/* grid item content styles */
+
+.bigQuote {
+    font: var(--text-preset-1);
+    padding: var(--spacing-200) 0;
+}
+
+.smallQuote {
+    font: var(--text-preset-3);
+}
+
+/* item $ | styles */
+
+/* item-1 */
+.item-1 {
+    background-color: var(--purple-500);
+    color: var(--white);   
+}
+
+.imageDaniel {
+    border: 2px solid var(--purple-400);
+}
+
+.gridWrapper > section:nth-of-type(1) .authorVerified, .gridWrapper > section:nth-of-type(1) .smallQuote {
+    color: var(--purple-50);
+}
+
+/* item-2 */
+
+.item-2 {
+    background-color: var(--grey-500);
+    color: var(--white);   
+}
+
+.gridWrapper > section:nth-of-type(2) .authorVerified {
+    color: var(--grey-300);
+}
+
+
+.gridWrapper > section:nth-of-type(2) .smallQuote {
+    color: var(--grey-100);
+}
+
+/* item-3 */
+
+.item-3 {
+    background-color: var(--white);
+    color: var(--grey-500);   
+}
+
+.gridWrapper > section:nth-of-type(3) .authorVerified, .gridWrapper > section:nth-of-type(3) .smallQuote {
+    color: var(--grey-400);
+}
+
+/* item-4 */
+
+.item-4 {
+    background-color: var(--dark-blue);
+    color: var(--grey-200);   
+}
+
+.gridWrapper > section:nth-of-type(4) :is(h3, h3 + p) {
+    color: var(--white);
+}
+
+.gridWrapper > section:nth-of-type(4) .smallQuote{
+    color: var(--grey-100);
+}
+
+/* item 5 */
+
+.item-5 {
+    background-color: var(--white);
+    color: var(--grey-500);   
+}
+
+.gridWrapper > section:nth-of-type(5) .authorVerified{
+    color: var(--grey-300);
+}
+
+.gridWrapper > section:nth-of-type(5) .smallQuote{
+    color: var(--grey-400);
+}
 
 /* attribution */
 
