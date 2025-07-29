@@ -1,5 +1,50 @@
 /* Mobile first Design */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+/* reusuable styles */
+
+:root {
+    /* primary */
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+
+    /* typography */
+
+    --text-preset-1: 600 20px/1.2 "Barlow Semi Condensed", sans-serif;
+    --text-preset-2: 500 13px/1.1 "Barlow Semi Condensed", sans-serif;
+    --text-preset-3: 500 13px/1.4 "Barlow Semi Condensed", sans-serif;
+    --text-preset-4: 500 11px/1.1 "Barlow Semi Condensed", sans-serif;
+    --default-letter-spacing: 0px;
+
+    /* spacing */
+
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+    
+}
+
+/* grid styles */
 
 
 
